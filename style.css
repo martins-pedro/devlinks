@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url(./images/bg-mobile.jpg) no-repeat center top/cover;
+}
+
+#mainArea {
+  width: 360px;
+  margin: 56px auto 0;
+  text-align: center;
+}
+
+.user > img {
+  width: 112px;
+  margin: 24px 0 8px;
+}
+
+.user > p {
+  margin-bottom: 24px;
+}
+
+.links > ul {
+  list-style: none;
+}
+
+.links a {
+  border: 1px solid #fff;
+  background: #ffffff2f;
+  text-decoration: none;
+}
