@@ -11,9 +11,10 @@ body {
 }
 
 #mainArea {
-  width: 360px;
+  max-width: 360px;
   margin: 56px auto 0;
   text-align: center;
+  padding: 0 24px;
 }
 
 .user > img {
@@ -27,10 +28,60 @@ body {
 
 .links > ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.links a {
-  border: 1px solid #fff;
+/* Jeito que tinha feito sem assistir a aula do curso */
+/* .anchorLinks {
+  display: inline-block;
+  margin-bottom: 16px;
+  width: 312px;
   background: #ffffff2f;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  padding: 16px 0;
   text-decoration: none;
+} */
+
+.anchorLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  padding: 16px 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  backdrop-filter: blue(4px);
+  -webkit-backdrop-filter: blur(4px);
+  font-weight: 500;
+
+  transition: background 0.2s;
+}
+
+.anchorLinks:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgba(255, 255, 255);
+}
+
+#socialLinks {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+#socialLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  font-size: 24px;
+  border-radius: 50%;
+  transition: background 0.4s;
+}
+
+#socialLinks a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
